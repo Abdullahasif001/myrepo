@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/Jquery.html/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <img src="/images/1024px-Toyota_MARK_X_350S_G's__(DBA-GRX133-VLJBTS)_rear.jpg" id="img" alt="">
+    <br>
+    <button id="hide">Hide</button>
+        <button id="show">show</button>
+
+
+</body>
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#img").hide(1000);
+      });
+      $("#show").click(function(){
+        $("#img").show(1000);
+      });
+    });
+    </script>
+</html>
