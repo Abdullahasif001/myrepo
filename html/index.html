@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+<style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #bbbba4;
+      border: solid 1px #997f7f;
+    }
+    
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    </style>
+</head>
+<body>
+ 
+<div id="flip">SHOW MORE</div>
+<img src="/images/1024px-Toyota_MARK_X_350S_G's__(DBA-GRX133-VLJBTS)_rear.jpg" id="panel" alt="">
+</body>
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    </script>
+</html>
